@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jervi — Editorial Portfolio & Creative Presentation</title>
+  <meta name="description" content="Official editorial portfolio of Jervi. Creative Technologist & Senior UI/UX Architect specializing in haute couture digital experiences, brand architecture, and interactive web craft.">
+  <meta name="author" content="Jervi">
+  
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="mode-presentation">
+
+  <!-- ========================================================================
+       TOP PERSISTENT NAVIGATION BAR
+       ======================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="brand-wrapper">
+      <a href="#slide-0" class="brand-title" data-goto-slide="0">JERVI</a>
+      <span class="brand-tag">Portfolio Edition</span>
+    </div>
+
+    <div class="header-center">
+      <div class="slide-counter-badge" id="slideCounterBadge">
+        PAGE: <span class="current-num" id="currentSlideNum">01</span> / <span id="totalSlidesNum">12</span>
+      </div>
+    </div>
+
+    <div class="header-controls">
+      <button class="mode-toggle-btn" id="modeToggleBtn" title="Toggle between presentation deck and scrolling layout">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="3" y1="9" x2="21" y2="9"></line>
+          <line x1="9" y1="21" x2="9" y2="9"></line>
+        </svg>
+        <span id="modeText">Scroll View</span>
+      </button>
+
+      <button class="toc-open-btn" id="tocOpenBtn" title="Open Table of Contents index">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <span>Index</span>
+      </button>
+
+      <a href="#slide-11" class="resume-btn" data-goto-slide="11" title="Get in touch or hire Jervi">
+        <span>Connect</span>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="7" y1="17" x2="17" y2="7"></line>
+          <polyline points="7 7 17 7 17 17"></polyline>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- Reading Progress Bar -->
+  <div class="progress-bar-container">
+    <div class="progress-bar-fill" id="progressBar"></div>
+  </div>
+
+  <!-- ========================================================================
+       MAIN SLIDES DECK (12-SLIDE EDITORIAL PRESENTATION)
+       ======================================================================== -->
+  <main class="main-experience">
+    <div class="slides-deck" id="slidesDeck">
+
+      <!-- ====================================================================
+           PAGE 1: COVER / HERO (PORTFOLIO PRESENTATION)
+           ==================================================================== -->
+      <article class="slide-frame slide-cover active" id="slide-0" data-page="1">
+        <div class="slide-meta-header on-terracotta">
+          <span class="meta-page-id">PAGE: 01</span>
+          <span>2025 – 2026</span>
+          <span>PORTFOLIO</span>
+        </div>
+
+        <div class="cover-canvas">
+          <div class="cover-header-row">
+            <div class="cover-accent-line-left">
+              <div class="vertical-indicator-line"></div>
+            </div>
+            <div class="cover-author-mark">
+              <span class="author-name-tag">Jervi</span>
+              <div class="author-vertical-line"></div>
+            </div>
+          </div>
+
+          <div class="cover-centerpiece">
+            <h1 class="cover-main-title">PORTFOLIO</h1>
+            <div class="cover-arch-hero arch-container">
+              <img src="assets/images/hero_arch.jpg" alt="Jervi - Editorial Profile Portrait" loading="eager">
+            </div>
+            <h2 class="cover-sub-title">PRESENTATION</h2>
+          </div>
+
+          <div class="cover-footer-row">
+            <div class="cover-years">
+              <div>2025</div>
+              <div>2026</div>
+            </div>
+            <button class="cover-explore-badge" onclick="document.getElementById('nextSlideBtn').click()">
+              <span>Explore Portfolio</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- ====================================================================
+           PAGE 2: TABLE OF CONTENTS (CONTENT)
+           ==================================================================== -->
+      <article class="slide-frame" id="slide-1" data-page="2">
+        <div class="slide-meta-header">
+          <span class="meta-page-id">PAGE: 02</span>
+          <span>2025 – 2026</span>
+          <span>PORTFOLIO</span>
+        </div>
+
+        <div class="slide-content-split">
+          <div class="content-left-col">
+            <div class="content-arch-portrait arch-container with-border">
+              <img src="assets/images/standing_chic.jpg" alt="Editorial Fashion Silhouette" loading="lazy">
+            </div>
+          </div>
+
+          <div class="content-right-col">
+            <h2 class="content-agenda-title">CONTENT</h2>
+            <nav class="toc-list" aria-label="Table of Contents">
+              <a href="#slide-2" class="toc-item-link" data-goto-slide="2">
+                <span class="toc-num">01</span>
+                <span class="toc-label">About Me</span>
+                <span class="toc-desc">Introduction, design background, and digital craftsmanship overview</span>
+              </a>
+              <a href="#slide-4" class="toc-item-link" data-goto-slide="4">
+                <span class="toc-num">02</span>
+                <span class="toc-label">What I Do</span>
+                <span class="toc-desc">Creative direction, brand identity systems, and high-fidelity UI/UX</span>
+              </a>
+              <a href="#slide-5" class="toc-item-link" data-goto-slide="5">
+                <span class="toc-num">03</span>
+                <span class="toc-label">My Resume</span>
+                <span class="toc-desc">Key career achievements, industry honors, and leadership milestones</span>
+              </a>
+              <a href="#slide-3" class="toc-item-link" data-goto-slide="3">
+                <span class="toc-num">04</span>
+                <span class="toc-label">Values & Drive</span>
+                <span class="toc-desc">Personal philosophy, artistic ethos, and what drives intentional design</span>
+              </a>
+              <a href="#slide-6" class="toc-item-link" data-goto-slide="6">
+                <span class="toc-num">05</span>
+                <span class="toc-label">Selected Works</span>
+                <span class="toc-desc">Curated case studies: digital flagships, spatial architecture & craft</span>
+              </a>
+              <a href="#slide-11" class="toc-item-link" data-goto-slide="11">
+                <span class="toc-num">06</span>
+                <span class="toc-label">Contact & Inquiries</span>
+                <span class="toc-desc">Direct communications, collaborations, and studio availability</span>
+              </a>
+            </nav>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- ====================================================================
+           PAGE 3: INTRODUCE YOURSELF (ABOUT ME)
+           ==================================================================== -->
+      <article class="slide-frame" id="slide-2" data-page="3">
+        <div class="slide-meta-header">
+          <span class="meta-page-id">PAGE: 03</span>
+          <span>2025 – 2026</span>
+          <span>PORTFOLIO</span>
+        </div>
+
+        <div class="slide-about-split">
+          <div class="about-left-col">
+            <h2 class="about-page-title">ABOUT ME</h2>
+            <div class="about-headline-title">Creative Technologist & UI/UX Architect</div>
+            
+            <div class="about-text-columns">
+              <p>
+                Hello, I am <strong>Jervi</strong>. I am a multidisciplinary designer and creative engineer dedicated to forging digital experiences that balance architectural elegance with precision engineering. With over eight years operating at the intersection of haute couture aesthetics and modern web technologies, I help pioneering brands articulate their vision through memorable, immersive digital narratives.
+              </p>
+              <p>
+                My background spans fine art direction, design systems architecture, and front-end engineering. I approach every project not merely as a set of screens, but as an editorial exhibition where typography, negative space, and micro-interactions coalesce to provoke emotion and inspire effortless user engagement.
+              </p>
+            </div>
+
+            <div class="about-highlight-box">
+              "Great design transcends decoration; it is the physical and digital translation of intention, reverence for simplicity, and timeless human connection."
+            </div>
+          </div>
+
+          <div class="about-right-col">
+            <div class="about-arch-portrait arch-container with-border">
+              <img src="assets/images/portrait_hat.jpg" alt="Jervi Portrait in Fedora Hat" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- ====================================================================
+           PAGE 4: EXPRESS YOUR PASSION (VALUES)
+           ==================================================================== -->
+      <article class="slide-frame slide-values" id="slide-3" data-page="4">
+        <div class="slide-meta-header" style="padding-left: 0; padding-right: 0;">
+          <span class="meta-page-id">PAGE: 04</span>
+          <span>2025 – 2026</span>
+          <span>PORTFOLIO</span>
+        </div>
+
+        <h2 class="values-title">VALUES</h2>
+
+        <div class="values-trio-grid">
+          <!-- Value 1 -->
+          <div class="value-card">
+            <div class="value-arch-image arch-container">
+              <img src="assets/images/hero_arch.jpg" alt="Uncompromising Craft" loading="lazy">
+            </div>
+            <div class="value-number-pill">One</div>
+            <h3 class="value-card-title">Uncompromising Craft</h3>
+            <p class="value-card-desc">
+              I believe every hairline border, typographic pairing, and millisecond of animation should be executed with total intentionality. True luxury resides in the quiet mastery of unseen details.
+            </p>
+          </div>
+
+          <!-- Value 2 -->
+          <div class="value-card">
+            <div class="value-arch-image arch-container">
+              <img src="assets/images/standing_chic.jpg" alt="Empathy & Purpose" loading="lazy">
+            </div>
+            <div class="value-number-pill">Two</div>
+            <h3 class="value-card-title">Empathy & Purpose</h3>
+            <p class="value-card-desc">
+              Technology is hollow without soul. What drives me every day is creating digital artifacts that respect human attention, dismantle friction, and deliver genuine warmth and emotional resonance.
+            </p>
+          </div>
+
+          <!-- Value 3 -->
+          <div class="value-card">
+            <div class="value-arch-image arch-container">
+              <img src="assets/images/portrait_hat.jpg" alt="Relentless Evolution" loading="lazy">
+            </div>
+            <div class="value-number-pill">Three</div>
+            <h3 class="value-card-title">Relentless Evolution</h3>
+            <p class="value-card-desc">
+              I embrace curiosity as my core engine. Constant experimentation across emerging design paradigms, modern web standards, and generative artistry keeps my perspective daring and perpetually refined.
+            </p>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- ====================================================================
+           PAGE 5: AREA OF EXPERTISE (WHAT I DO)
+           ==================================================================== -->
+      <article class="slide-frame" id="slide-4" data-page="5">
+        <div class="slide-meta-header">
+          <span class="meta-page-id">PAGE: 05</span>
+          <span>2025 – 2026</span>
+          <span>PORTFOLIO</span>
+        </div>
+
+        <div class="slide-what-split">
+          <div class="what-left-col">
+            <h2 class="what-page-title">WHAT I DO</h2>
+
+            <div class="services-list">
+              <!-- Service 01 -->
+              <div class="service-item">
+                <div class="service-header">
+                  <span class="service-num">01</span>
+                  <h3 class="service-title">Creative Direction & Brand Architecture</h3>
+                </div>
+                <p class="service-desc">
+                  Curating holistic brand identities, art direction, and luxury typography guidelines. Translating abstract brand ethos into coherent, prestige visual languages that stand out in global markets.
+                </p>
+              </div>
+
+              <!-- Service 02 -->
+              <div class="service-item">
+                <div class="service-header">
+                  <span class="service-num">02</span>
+                  <h3 class="service-title">Interactive UI/UX & Design Systems</h3>
+                </div>
+                <p class="service-desc">
+                  Architecting scalable multi-platform design tokens, intuitive user journeys, and tactile micro-interactions that elevate functional web software into an unforgettable gallery-like experience.
+                </p>
+              </div>
+
+              <!-- Service 03 -->
+              <div class="service-item">
+                <div class="service-header">
+                  <span class="service-num">03</span>
+                  <h3 class="service-title">Front-End Engineering & Web Craft</h3>
+                </div>
+                <p class="service-desc">
+                  Building blazing-fast, accessible, and responsive interfaces using vanilla semantic web technologies. Zero bloat, silky 60fps transitions, and flawless cross-device performance.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="what-right-col">
+            <div class="what-image-frame">
+              <img src="assets/images/artisan_hands.jpg" alt="Artisan Craftsmanship & Precision" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- ====================================================================
+           PAGE 6: HIGHLIGHT ACHIEVEMENTS (MY RESUME)
+           ==================================================================== -->
+      <article class="slide-frame" id="slide-5" data-page="6">
+        <div class="slide-meta-header">
+          <span class="meta-page-id">PAGE: 06</span>
+          <span>2025 – 2026</span>
+          <span>PORTFOLIO</span>
+        </div>
+
+        <div class="slide-resume-split">
+          <div class="resume-left-col">
+            <h2 class="resume-page-title">MY RESUME</h2>
+
+            <div class="resume-section-group">
+              <div class="resume-category-title">
+                <span>01</span> Experience & Leadership
+              </div>
+              <div class="resume-timeline-item">
+                <span class="resume-year">2023 – Present</span>
+                <span class="resume-role-text"><strong>Principal Creative Technologist</strong> — Studio Horizon (Global Brand Atelier)</span>
+              </div>
+              <div class="resume-timeline-item">
+                <span class="resume-year">2020 – 2023</span>
+                <span class="resume-role-text"><strong>Lead Product & UI/UX Architect</strong> — Lumina Digital Interactive</span>
+              </div>
+              <div class="resume-timeline-item">
+                <span class="resume-year">2018 – 2020</span>
+                <span class="resume-role-text"><strong>Senior Visual Designer</strong> — Atelier Novus Paris</span>
+              </div>
+            </div>
+
+            <div class="resume-section-group">
+              <div class="resume-category-title">
+                <span>02</span> Key Achievements & Honors
+              </div>
+              <div class="resume-timeline-item">
+                <span class="resume-year">Awwwards</span>
+                <span class="resume-role-text"><strong>Site of the Day & Developer Award</strong> — Recognized for bespoke editorial typography and performance</span>
+              </div>
+              <div class="resume-timeline-item">
+                <span class="resume-year">FWA & CSSDA</span>
+                <span class="resume-role-text"><strong>Best UI / UX & Innovation Trophy</strong> — Honored for high-fashion digital flagship interactive experience</span>
+              </div>
+              <div class="resume-timeline-item">
+                <span class="resume-year">Impact</span>
+                <span class="resume-role-text"><strong>85M+ Global Interactions</strong> — Directed e-commerce and editorial platforms generating over $40M in client revenue</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="resume-right-col">
+            <span class="resume-badge-label">RESUME</span>
+            <div class="resume-arch-portrait arch-container with-border">
+              <img src="assets/images/standing_chic.jpg" alt="Resume Profile Arch" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- ====================================================================
+           PAGE 7: WORK TRANSITION 01 (01 My Work - Area)
+           ==================================================================== -->
+      <article class="slide-frame slide-work-banner" id="slide-6" data-page="7">
+        <div class="slide-meta-header on-dark">
+          <span class="meta-page-id">PAGE: 07</span>
+          <span>2025 – 2026</span>
+          <span>PORTFOLIO</span>
+        </div>
+
+        <img src="assets/images/dramatic_profile.jpg" alt="Dramatic Profile Silhouette" class="banner-backdrop-img">
+
+        <div class="banner-content">
+          <div class="banner-num">01</div>
+          <h2 class="banner-title">My Work — Digital Flagships</h2>
+          <div class="banner-sub">High Fashion & Luxury Brand Platforms</div>
+        </div>
+      </article>
+
+
+      <!-- ====================================================================
+           PAGE 8: PROJECT 01 (PROJECT 01: LUMIÈRE ATELIER)
+           ==================================================================== -->
+      <article class="slide-frame" id="slide-7" data-page="8">
+        <div class="slide-meta-header">
+          <span class="meta-page-id">PAGE: 08</span>
+          <span>2025 – 2026</span>
+          <span>PORTFOLIO</span>
+        </div>
+
+        <div class="slide-project-split">
+          <div class="project-left-col">
+            <div>
+              <div class="project-meta-label">Selected Case Study</div>
+              <h2 class="project-page-title">PROJECT 01</h2>
+              <h3 class="project-subtitle">Lumière Atelier — Digital Flagship & Identity</h3>
+              <p class="project-narrative">
+                Commissioned to reimagine the digital presence of an haute couture fragrance and apparel house. The project demanded an editorial canvas that felt like an archival museum piece while providing sub-second e-commerce transaction capabilities. Integrated custom serif typography, arch geometry, and fluid viewport transitions.
+              </p>
+            </div>
+
+            <div>
+              <div class="project-metrics-grid">
+                <div class="metric-item">
+                  <span class="metric-val">+148%</span>
+                  <span class="metric-label">Online Engagement</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-val">0.42s</span>
+                  <span class="metric-label">Load Time</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-val">Awwwards</span>
+                  <span class="metric-label">Site of the Day</span>
+                </div>
+              </div>
+
+              <div class="project-photo-subgrid">
+                <div class="sub-thumb arch-container" onclick="openLightbox('assets/images/artisan_hands.jpg', 'Lumière Atelier - Artisan Craft Details')">
+                  <img src="assets/images/artisan_hands.jpg" alt="Artisan hands closeup" loading="lazy">
+                </div>
+                <div class="sub-thumb" style="border-radius: 4px; overflow: hidden;" onclick="openLightbox('assets/images/portrait_hat.jpg', 'Lumière Atelier - Campaign Imagery')">
+                  <img src="assets/images/portrait_hat.jpg" alt="Campaign model" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-right-col">
+            <div class="project-featured-tall" onclick="openLightbox('assets/images/hero_arch.jpg', 'Lumière Atelier - Hero Campaign Artwork')">
+              <img src="assets/images/hero_arch.jpg" alt="Project 01 Tall Visual" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- ====================================================================
+           PAGE 9: WORK TRANSITION 02 (02 My Work - Area)
+           ==================================================================== -->
+      <article class="slide-frame slide-work-banner" id="slide-8" data-page="9">
+        <div class="slide-meta-header on-dark">
+          <span class="meta-page-id">PAGE: 09</span>
+          <span>2025 – 2026</span>
+          <span>PORTFOLIO</span>
+        </div>
+
+        <img src="assets/images/portrait_hat.jpg" alt="High Fashion Mood Silhouette" class="banner-backdrop-img">
+
+        <div class="banner-content">
+          <div class="banner-num">02</div>
+          <h2 class="banner-title">My Work — Spatial Systems</h2>
+          <div class="banner-sub">Architectural Interfaces & Interactive Installations</div>
+        </div>
+      </article>
+
+
+      <!-- ====================================================================
+           PAGE 10: PROJECT 02 (PROJECT 02: AURA LIVING)
+           ==================================================================== -->
+      <article class="slide-frame" id="slide-9" data-page="10">
+        <div class="slide-meta-header">
+          <span class="meta-page-id">PAGE: 10</span>
+          <span>2025 – 2026</span>
+          <span>PORTFOLIO</span>
+        </div>
+
+        <div class="slide-project-split">
+          <div class="project-left-col">
+            <div>
+              <div class="project-meta-label">Selected Case Study</div>
+              <h2 class="project-page-title">PROJECT 02</h2>
+              <h3 class="project-subtitle">Aura Spatial Living — Environmental Design Platform</h3>
+              <p class="project-narrative">
+                Aura is an innovative platform showcasing sustainable brutalist architecture and bespoke interior installations across Zurich, Tokyo, and New York. I developed an interactive editorial interface featuring generative grid typography, interactive blueprint layers, and responsive architectural viewing modes.
+              </p>
+            </div>
+
+            <div>
+              <div class="project-metrics-grid">
+                <div class="metric-item">
+                  <span class="metric-val">+210%</span>
+                  <span class="metric-label">Inquiry Volume</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-val">99.8%</span>
+                  <span class="metric-label">Lighthouse Score</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-val">FWA</span>
+                  <span class="metric-label">Design Excellence</span>
+                </div>
+              </div>
+
+              <div class="project-photo-subgrid">
+                <div class="sub-thumb arch-container" onclick="openLightbox('assets/images/standing_chic.jpg', 'Aura Spatial - Architectural Modeling')">
+                  <img src="assets/images/standing_chic.jpg" alt="Architectural model silhouette" loading="lazy">
+                </div>
+                <div class="sub-thumb" style="border-radius: 4px; overflow: hidden;" onclick="openLightbox('assets/images/dramatic_profile.jpg', 'Aura Spatial - Art Direction')">
+                  <img src="assets/images/dramatic_profile.jpg" alt="Art direction preview" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-right-col">
+            <div class="project-featured-tall" onclick="openLightbox('assets/images/standing_chic.jpg', 'Aura Spatial Living - Editorial Showcase')">
+              <img src="assets/images/standing_chic.jpg" alt="Project 02 Tall Visual" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- ====================================================================
+           PAGE 11: IMAGE GALLERY
+           ==================================================================== -->
+      <article class="slide-frame slide-gallery" id="slide-10" data-page="11">
+        <div class="slide-meta-header" style="padding-left: 0; padding-right: 0;">
+          <span class="meta-page-id">PAGE: 11</span>
+          <span>2025 – 2026</span>
+          <span>PORTFOLIO</span>
+        </div>
+
+        <h2 class="gallery-title">IMAGE GALLERY</h2>
+
+        <div class="gallery-grid">
+          <!-- Gallery Item 1 -->
+          <div class="gallery-card" onclick="openLightbox('assets/images/hero_arch.jpg', 'Plate I: Silhouette & Form (Editorial Monograph)')">
+            <img src="assets/images/hero_arch.jpg" alt="Plate I: Silhouette & Form" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-caption-title">Plate I: Silhouette & Form</div>
+              <div class="gallery-caption-sub">Monochrome Study • Tokyo</div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 2 -->
+          <div class="gallery-card" onclick="openLightbox('assets/images/portrait_hat.jpg', 'Plate II: Sartorial Structure (Paris Fashion Week)')">
+            <img src="assets/images/portrait_hat.jpg" alt="Plate II: Sartorial Structure" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-caption-title">Plate II: Sartorial Structure</div>
+              <div class="gallery-caption-sub">Editorial Campaign • Paris</div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 3 -->
+          <div class="gallery-card" onclick="openLightbox('assets/images/artisan_hands.jpg', 'Plate III: Tactile Craft & Materials (Milano Design Week)')">
+            <img src="assets/images/artisan_hands.jpg" alt="Plate III: Tactile Craft & Materials" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-caption-title">Plate III: Tactile Craft & Materials</div>
+              <div class="gallery-caption-sub">Precision Artisan Study • Milano</div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- ====================================================================
+           PAGE 12: CONTACT US
+           ==================================================================== -->
+      <article class="slide-frame slide-contact" id="slide-11" data-page="12">
+        <div class="slide-meta-header">
+          <span class="meta-page-id">PAGE: 12</span>
+          <span>2025 – 2026</span>
+          <span>PORTFOLIO</span>
+        </div>
+
+        <div class="contact-top-banner">
+          <h2 class="contact-title">Contact Us</h2>
+          <div class="contact-banner-desc">
+            Whether you are envisioning a revolutionary brand identity, an immersive digital flagship, or high-level creative direction, let us shape something unforgettable.
+          </div>
+        </div>
+
+        <div class="contact-content-grid">
+          <div>
+            <div class="contact-fun-portrait-box">
+              <img src="assets/images/contact_fun.jpg" alt="Jervi smiling playfully with eyeglasses and pointing fingers" loading="lazy">
+            </div>
+
+            <div class="contact-footer-info">
+              <div class="info-block">
+                <span class="info-label">Address :</span>
+                <span class="info-text">125 Grand Boulevard<br>Design District, NY 10013</span>
+              </div>
+              <div class="info-block">
+                <span class="info-label">Phone :</span>
+                <span class="info-text">+1 (212) 456-7890<br>Mon – Fri, 9am – 6pm</span>
+              </div>
+              <div class="info-block">
+                <span class="info-label">Web & Mail :</span>
+                <span class="info-text">hello@jervi.design<br>www.jervi-portfolio.com</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-panel">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="contactName" class="form-label">Your Name</label>
+                <input type="text" id="contactName" class="form-input" placeholder="e.g. Eleanor Vance" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Email Address</label>
+                <input type="email" id="contactEmail" class="form-input" placeholder="e.g. eleanor@atelier.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactSubject" class="form-label">Inquiry Scope</label>
+                <input type="text" id="contactSubject" class="form-input" placeholder="e.g. Brand Architecture / Digital Flagship">
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Message & Vision</label>
+                <textarea id="contactMessage" class="form-textarea" placeholder="Describe your timeline, vision, or project details..." required></textarea>
+              </div>
+
+              <button type="submit" class="form-submit-btn">Send Inquiry</button>
+            </form>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+
+  <!-- ========================================================================
+       FLOATING SLIDE NAVIGATION DOCK (PAGE CONTROLS)
+       ======================================================================== -->
+  <aside class="slide-nav-dock" id="navDock" aria-label="Slide controls">
+    <button class="nav-arrow-btn" id="prevSlideBtn" title="Previous Slide (or Left Arrow)">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </button>
+
+    <div class="nav-dots-container" id="navDotsContainer">
+      <!-- 12 dots generated by js -->
+    </div>
+
+    <button class="nav-arrow-btn" id="nextSlideBtn" title="Next Slide (or Right Arrow / Space)">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </button>
+  </aside>
+
+
+  <!-- ========================================================================
+       TABLE OF CONTENTS DRAWER OVERLAY
+       ======================================================================== -->
+  <div class="toc-drawer-overlay" id="tocDrawerOverlay">
+    <div class="toc-drawer">
+      <div class="drawer-header">
+        <div class="drawer-title">Index</div>
+        <button class="drawer-close-btn" id="tocCloseBtn" title="Close Index">✕</button>
+      </div>
+
+      <div class="drawer-list">
+        <a href="#slide-0" class="drawer-item" data-goto-slide="0">
+          <span class="drawer-item-title">Cover: Portfolio Presentation</span>
+          <span class="drawer-item-num">PAGE 01</span>
+        </a>
+        <a href="#slide-1" class="drawer-item" data-goto-slide="1">
+          <span class="drawer-item-title">Table of Contents</span>
+          <span class="drawer-item-num">PAGE 02</span>
+        </a>
+        <a href="#slide-2" class="drawer-item" data-goto-slide="2">
+          <span class="drawer-item-title">About Me — Introduction & Background</span>
+          <span class="drawer-item-num">PAGE 03</span>
+        </a>
+        <a href="#slide-3" class="drawer-item" data-goto-slide="3">
+          <span class="drawer-item-title">Values — Passion & Driving Philosophy</span>
+          <span class="drawer-item-num">PAGE 04</span>
+        </a>
+        <a href="#slide-4" class="drawer-item" data-goto-slide="4">
+          <span class="drawer-item-title">What I Do — Areas of Expertise</span>
+          <span class="drawer-item-num">PAGE 05</span>
+        </a>
+        <a href="#slide-5" class="drawer-item" data-goto-slide="5">
+          <span class="drawer-item-title">My Resume — Milestones & Achievements</span>
+          <span class="drawer-item-num">PAGE 06</span>
+        </a>
+        <a href="#slide-6" class="drawer-item" data-goto-slide="6">
+          <span class="drawer-item-title">01 My Work — Digital Flagships</span>
+          <span class="drawer-item-num">PAGE 07</span>
+        </a>
+        <a href="#slide-7" class="drawer-item" data-goto-slide="7">
+          <span class="drawer-item-title">Project 01: Lumière Atelier</span>
+          <span class="drawer-item-num">PAGE 08</span>
+        </a>
+        <a href="#slide-8" class="drawer-item" data-goto-slide="8">
+          <span class="drawer-item-title">02 My Work — Spatial Systems</span>
+          <span class="drawer-item-num">PAGE 09</span>
+        </a>
+        <a href="#slide-9" class="drawer-item" data-goto-slide="9">
+          <span class="drawer-item-title">Project 02: Aura Living</span>
+          <span class="drawer-item-num">PAGE 10</span>
+        </a>
+        <a href="#slide-10" class="drawer-item" data-goto-slide="10">
+          <span class="drawer-item-title">Image Gallery</span>
+          <span class="drawer-item-num">PAGE 11</span>
+        </a>
+        <a href="#slide-11" class="drawer-item" data-goto-slide="11">
+          <span class="drawer-item-title">Contact Us</span>
+          <span class="drawer-item-num">PAGE 12</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========================================================================
+       FULLSCREEN IMAGE LIGHTBOX MODAL
+       ======================================================================== -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <button class="lightbox-close" id="lightboxClose" title="Close Preview">✕</button>
+    <div class="lightbox-content">
+      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+
+  <!-- ========================================================================
+       TOAST NOTIFICATION
+       ======================================================================== -->
+  <div class="toast-notice" id="toastNotice">
+    <span class="toast-icon">✦</span>
+    <span id="toastMessage">Welcome to Jervi's Portfolio</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>

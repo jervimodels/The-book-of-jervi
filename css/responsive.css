@@ -1,0 +1,156 @@
+/* ==========================================================================
+   JERVI EDITORIAL PORTFOLIO - RESPONSIVE STYLES
+   Ensures seamless presentation on desktop, tablet, and mobile displays
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+  :root {
+    --slide-width: 95vw;
+  }
+  
+  .slide-content-split,
+  .slide-about-split,
+  .slide-what-split,
+  .slide-resume-split,
+  .slide-project-split {
+    grid-template-columns: 1fr;
+  }
+
+  .slide-canvas {
+    min-height: auto;
+  }
+
+  .content-arch-portrait,
+  .about-arch-portrait,
+  .resume-arch-portrait {
+    width: 240px;
+    height: 340px;
+  }
+
+  .content-right-col,
+  .about-left-col,
+  .what-left-col,
+  .resume-left-col,
+  .project-left-col {
+    padding: 2.5rem 2rem;
+  }
+
+  .contact-content-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .values-trio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-card {
+    height: 350px;
+  }
+
+  .about-text-columns {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .cover-canvas {
+    padding: 2.5rem 1.5rem 3rem;
+  }
+
+  .cover-arch-hero {
+    width: 240px;
+    height: 300px;
+  }
+
+  .cover-main-title {
+    font-size: 2.8rem;
+  }
+
+  .cover-sub-title {
+    font-size: 1.6rem;
+  }
+
+  .site-header {
+    padding: 0.85rem 1rem;
+  }
+
+  .brand-tag {
+    display: none;
+  }
+
+  .header-controls .mode-toggle-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .slide-meta-header {
+    padding: 0.85rem 1rem 0.65rem;
+    font-size: 0.65rem;
+  }
+
+  .content-right-col,
+  .about-left-col,
+  .what-left-col,
+  .resume-left-col,
+  .project-left-col,
+  .slide-values,
+  .slide-gallery,
+  .contact-top-banner,
+  .contact-content-grid {
+    padding: 1.5rem 1rem;
+  }
+
+  .toc-item-link {
+    grid-template-columns: 35px 1fr;
+    gap: 0.75rem;
+  }
+
+  .toc-desc {
+    grid-column: span 2;
+    padding-left: 2rem;
+  }
+
+  .contact-footer-info {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .slide-nav-dock {
+    bottom: 1rem;
+    padding: 0.4rem 0.75rem;
+    gap: 0.5rem;
+  }
+
+  .nav-arrow-btn {
+    width: 34px;
+    height: 34px;
+  }
+
+  .nav-dot {
+    width: 6px;
+    height: 6px;
+  }
+
+  .nav-dot.active {
+    width: 16px;
+  }
+
+  .banner-content {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .banner-num {
+    font-size: 2.5rem;
+  }
+
+  .banner-title {
+    font-size: 1.8rem;
+  }
+}
